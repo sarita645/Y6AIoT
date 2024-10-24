@@ -1,0 +1,151 @@
+@import './index.css';
+@import './menu.css';
+
+
+
+
+
+
+/* 重置所有元素的邊距、內距、邊框、字體大小、字體及垂直對齊基準 */
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* 將HTML5新增的語意元素設定為區塊元素 */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+
+/* 設定整個文件的行高為1，避免不必要的行高差異 */
+body {
+  line-height: 1;
+}
+
+/* 清除有序列表和無序列表的預設樣式 */
+ol,
+ul {
+  list-style: none;
+}
+
+a,
+a:hover {
+  text-decoration: none;
+  /* 去除底線 */
+  color: inherit;
+  /* 使用父元素的文字顏色 */
+}
+
+/* 清除引用樣式的引號 */
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+
+/* 清除表格的邊框塌陷和單元格間的間距 */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}

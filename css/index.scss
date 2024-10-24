@@ -1,0 +1,230 @@
+body {
+  width: auto;
+  height: 950px;
+  // background: linear-gradient(0deg, rgba(118, 198, 209, 1) 0%, rgba(0, 110, 172, 1) 100%);
+
+  background-color: #006eac;
+}
+
+.navbar {
+  height: 80px;
+  width: auto;
+  padding: 20px 40px;
+  background-color: rgba(0, 255, 255, 0);
+  z-index: 10;
+  /* 确保菜单在 slider-container 之上 */
+}
+
+.nav-right {
+  display: flex;
+  gap: 20px;
+}
+
+.nav-right img {
+  width: 40px;
+  height: 40px;
+}
+
+
+
+.web-title {
+  font-size: 20px;
+  color: #ffffff;
+}
+
+
+
+
+
+
+.user {
+  display: flex;
+  align-items: center;
+}
+
+.user-p {
+  color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 3px;
+}
+
+.content {
+  display: flex;
+}
+
+.picture {
+  background-color: #ffffff;
+  width: 100%;
+  height: 870px;
+  padding: 100px;
+  position: relative;
+
+  //2:1-左
+  .img01 {
+    border-radius: 45px;
+    height: 600px;
+    width: 900px;
+    position: relative;
+    object-fit: cover;
+
+  }
+
+  //2:1-右x2
+  .img02 {
+    border-radius: 21.12px;
+    align-self: stretch;
+    flex-shrink: 0;
+    height: 280px;
+    width: 420px;
+    position: relative;
+    object-fit: cover;
+  }
+
+  //2:1-右x1
+  .img03 {
+    border-radius: 21.12px;
+    align-self: stretch;
+    flex-shrink: 0;
+    height: 600px;
+    width: 420px;
+    position: relative;
+    object-fit: cover;
+  }
+
+  // 全一張
+  .img05 {
+    border-radius: 21.12px;
+    align-self: stretch;
+    flex-shrink: 0;
+    height: 600px;
+    width: 1360px;
+    position: relative;
+    object-fit: cover;
+  }
+
+
+
+}
+
+.slider-container {
+  width: 100%;
+  height: 100%;
+  /* Ensure the height is appropriate */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+
+
+}
+
+.image-group {
+  opacity: 0;
+  /* 默认隐藏 */
+  display: none;
+  position: absolute;
+  /* Ensure proper overlap */
+  width: 100%;
+  height: 100%;
+  transition: opacity 1s ease-in-out;
+  /* 淡入淡出效果 */
+
+  align-content: center;
+
+
+
+  //----
+
+
+
+}
+
+.image-group.active {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+  opacity: 1;
+  /* 当前显示的图片组 */
+}
+
+.slider-image {
+  width: calc(33% - 10px);
+  /* 一次显示三张图片，图片之间留有空隙 */
+  height: auto;
+  /* 自适应高度 */
+  object-fit: cover;
+
+  border-radius: 15px;
+  /* 添加圆角样式 */
+
+
+  //--
+
+
+
+}
+
+
+
+
+
+
+
+
+
+.buttons {
+  display: flex;
+  gap: 30px;
+  margin-top: 10px;
+  flex-direction: row-reverse;
+
+
+}
+
+
+
+
+//----
+
+.carousel {
+
+
+  button {
+    border-style: solid;
+    border-color: #b9b9b9;
+    border-width: 1px;
+    padding: 10px 20px 10px 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-shrink: 0;
+    position: relative;
+    color: #555555;
+    font-family: 'Noto Sans Traditional Chinese', sans-serif;
+    /* 应用 Lato 字体 */
+
+  }
+
+
+  button:hover {
+    background: #59adb9;
+    border-style: solid;
+    border-color: transparent;
+
+    padding: 10px 20px 10px 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-shrink: 0;
+    position: relative;
+    color: #ffffff;
+  }
+}

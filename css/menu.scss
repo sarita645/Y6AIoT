@@ -1,0 +1,157 @@
+.sidebar {
+
+
+
+
+
+
+
+
+  background-image: url(../img/bg-03.png);
+  background-position: center;
+  background-size: cover;
+
+
+
+  display: flex;
+  flex-direction: column;
+
+  z-index: 5;
+
+}
+
+.menu {
+  width: 280px;
+  /* 可以根據需要調整 */
+  height: 100%;
+  padding: 60px 0px 60px 20px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+
+
+
+
+}
+
+
+
+.menu.collapsed {
+  width: 50px;
+  /* 當折疊時的寬度 */
+  padding: 60px 0;
+  /* 調整 padding */
+}
+
+
+
+.menu-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.menu-list.hidden {
+  display: none;
+  /* 隱藏選單 */
+}
+
+
+.menu-item {
+  position: relative;
+}
+
+.menu-item>p {
+  background: rgba(255, 255, 255, 0.657);
+  border-radius: 40px 0px 0px 40px;
+  border-style: solid;
+  border-color: rgba(255, 255, 255, 0.5);
+  border-width: 0px 0px 1px 0px;
+  padding: 30px 10px 30px 30px;
+  display: flex;
+  flex-direction: row;
+  gap: 8px;
+  align-items: center;
+  justify-content: flex-start;
+  align-self: stretch;
+  flex-shrink: 0;
+  position: relative;
+  box-shadow: 0px 4px 18px 0px rgba(0, 0, 0, 0.1);
+
+}
+
+
+
+.menu-item:hover>p,
+.menu-item:hover .submenu,
+.menu-item .submenu:hover {
+  background-color: #ffffff;
+  /* 或者你想要的 hover 效果 */
+}
+
+
+.menu-item>p:hover {
+  background-color: #ffffff;
+}
+
+.submenu {
+  list-style: none;
+
+  position: absolute;
+  top: 0;
+  left: 100%;
+  width: 210px;
+  /* 可以根據需要調整 */
+  background-color: #ffffff;
+  display: none;
+  padding: 4px 4px 4px 4px;
+  border-width: 0px 0px 1px 0px;
+
+
+
+  box-shadow: 4px 0px 16px 0px rgba(0, 0, 0, 0.25);
+}
+
+.submenu li {
+  border-bottom: 1px solid #e4e4e4;
+
+}
+
+.submenu li a {
+  display: block;
+  padding: 10px 10px;
+  color: #464646;
+  text-decoration: none;
+}
+
+.submenu li a:hover {
+  background-color: #006eac;
+  color: #ffffff;
+}
+
+.menu-item:hover .submenu {
+  display: block;
+}
+
+
+.menu-switch {
+
+  height: 50px;
+  background-color: transparent;
+  border: none;
+
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  color: aliceblue;
+}
+
+
+.menu-switch:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+.menu-switch span {
+  font-size: 24px;
+}
