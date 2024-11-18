@@ -91,6 +91,16 @@ body {
   -o-object-fit: cover;
      object-fit: cover;
 }
+.picture .img06 {
+  border-radius: 21.12px;
+  align-self: stretch;
+  flex-shrink: 0;
+  height: 280px;
+  width: 520px;
+  position: relative;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
 
 .slider-container {
   width: 100%;
